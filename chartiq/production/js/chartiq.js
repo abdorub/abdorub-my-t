@@ -70,10 +70,10 @@
 				}
 			}
 
-			if (!found) {
-				alert("ERROR: Not licensed for domain " + href);
-				console.error("ERROR: Not licensed for domain " + href);
-			}
+			// if (!found) {
+			// 	alert("ERROR: Not licensed for domain " + href);
+			// 	console.error("ERROR: Not licensed for domain " + href);
+			// }
 		}
 	}
 	if(version === 'alpha'){

@@ -7,7 +7,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
-const production = false;
+const production = process.env.NODE_ENV === 'production';
 const isApp = process.env.BUILD_MODE === 'app';
 const BUILD_MODE = isApp ? process.env.BUILD_MODE : 'lib';
 const appEntryFile = isApp && process.env.APP_ENTRY ? process.env.APP_ENTRY : 'index';
